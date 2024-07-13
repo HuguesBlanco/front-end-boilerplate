@@ -3,6 +3,7 @@
 import tseslint from "typescript-eslint";
 import reactRefresh from "eslint-plugin-react-refresh";
 import reactHooks from "eslint-plugin-react-hooks";
+import globals from "globals";
 
 export default tseslint.config(
   ...tseslint.configs.strictTypeChecked,
@@ -13,6 +14,7 @@ export default tseslint.config(
         project: ["./tsconfig.node.json", "./tsconfig.app.json"],
         tsconfigRootDir: import.meta.dirname,
       },
+      globals: { ...globals.browser },
     },
   },
   {
