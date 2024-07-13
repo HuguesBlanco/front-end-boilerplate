@@ -2,6 +2,7 @@
 
 import tseslint from "typescript-eslint";
 import reactRefresh from "eslint-plugin-react-refresh";
+import reactHooks from "eslint-plugin-react-hooks";
 
 export default tseslint.config(
   ...tseslint.configs.strictTypeChecked,
@@ -24,6 +25,15 @@ export default tseslint.config(
     },
     rules: {
       "react-refresh/only-export-components": ["warn"],
+    },
+  },
+  {
+    plugins: {
+      "react-hooks": reactHooks,
+    },
+    rules: {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
     },
   }
 );
