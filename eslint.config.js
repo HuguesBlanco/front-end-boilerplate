@@ -1,6 +1,7 @@
 // @ts-check
 
 import tseslint from "typescript-eslint";
+import reactRefresh from "eslint-plugin-react-refresh";
 
 export default tseslint.config(
   ...tseslint.configs.strictTypeChecked,
@@ -16,5 +17,13 @@ export default tseslint.config(
   {
     files: ["**/*.js"],
     ...tseslint.configs.disableTypeChecked,
+  },
+  {
+    plugins: {
+      "react-refresh": reactRefresh,
+    },
+    rules: {
+      "react-refresh/only-export-components": ["warn"],
+    },
   }
 );
