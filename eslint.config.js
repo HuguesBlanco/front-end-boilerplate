@@ -22,6 +22,17 @@ export default tseslint.config(
       },
       globals: { ...globals.browser },
     },
+    rules: {
+      eqeqeq: 'error',
+      'prefer-const': 'error',
+      'no-var': 'error',
+      'no-implicit-coercion': 'error',
+      'no-implicit-globals': 'error',
+      'no-unused-expressions': 'error',
+      '@typescript-eslint/explicit-function-return-type': 'warn',
+      '@typescript-eslint/explicit-module-boundary-types': 'warn',
+      '@typescript-eslint/strict-boolean-expressions': 'error',
+    },
   },
   {
     files: ['**/*.js'],
