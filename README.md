@@ -4,7 +4,7 @@ This template helps you create new front-end applications. Built with Vite JS on
 
 ## Prerequisites
 
-- [Git](https://git-scm.com/)
+- [Git](https://git-scm.com)
 - [Node.js](https://nodejs.org/en) version 20+
 
 ## Getting Started
@@ -35,11 +35,11 @@ Run the `dev` script to start your development server.
 npm run dev
 ```
 
-The development server will be available at http://localhost:5173/.
+The development server will be available at http://localhost:5173.
 
 ## Recommended VS Code Plugins
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/), the following plugins can greatly enhance your development experience.
+If you're using [Visual Studio Code](https://code.visualstudio.com), the following plugins can greatly enhance your development experience.
 
 - **[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)**  
   Integrates ESLint into VS Code, displaying errors and warnings directly in the editor without the need to run ESLint manually.
@@ -66,3 +66,7 @@ In the project directory, you can run the following scripts:
 | `npm run lint`       | Runs ESLint and displays potential code problems. This helps maintain code quality and consistency.                                                                                                                                                           |
 | `npm run build`      | Builds the application for production. This script compiles the TypeScript code and bundles the application with Vite. The output will be in the `dist` folder.                                                                                               |
 | `npm run preview`    | Serves the production build locally. This is useful for testing the production build before deploying. **Note**: You must run `npm run build` beforehand.                                                                                                     |
+
+## To Do Note
+
+Once `typescript-eslint` version 8 is released, update ESLint to version 9.
