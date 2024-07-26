@@ -55,6 +55,18 @@ If you're using [Visual Studio Code](https://code.visualstudio.com), the followi
 - **[GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)**  
   Enhances Git capabilities in VS Code by providing a variety of tools, such as displaying historical context about line changes in the editor and showing a stash view in your source control tab.
 
+## Recommended VS Code Settings
+
+To enhance your development experience in [Visual Studio Code](https://code.visualstudio.com), add the following configuration to your [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) file:
+
+```json
+"editor.codeActionsOnSave": {
+  "source.organizeImports": true
+}
+```
+
+This setting automatically organizes your imports every time you save a file. This ensures that imports are always sorted consistently, preventing unnecessary changes in import order during merge requests and improving code readability.
+
 ## Available Scripts
 
 In the project directory, you can run the following scripts:
@@ -70,3 +82,7 @@ In the project directory, you can run the following scripts:
 ## To Do Note
 
 Once `typescript-eslint` version 8 is released, update ESLint to version 9.
+
+```
+
+```
